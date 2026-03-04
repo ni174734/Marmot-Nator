@@ -3,7 +3,7 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    float elapsedTime = 5.0f;
+    float elapsedTime = 90.0f;
 
 
     // Update is called once per frame
