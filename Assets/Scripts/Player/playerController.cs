@@ -11,7 +11,9 @@ public class playerController : MonoBehaviour
     [Header("Move")]
 	[Tooltip("Max player speed.")]
     [SerializeField] private float maxSpeed = 8f;
-	[Tooltip("How fast you reach max speed.")]
+    [Tooltip("Min player speed.")]
+    [SerializeField] private float minSpeed = 2.5f;
+    [Tooltip("How fast you reach max speed.")]
     [SerializeField] private float accel = 60f;         // how fast you reach max speed
 	[Tooltip("How fast you stop.")]
     [SerializeField] private float decel = 70f;         // how fast you stop
@@ -134,6 +136,23 @@ public class playerController : MonoBehaviour
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * jumpCutMultiplier);
             }
         }
+    }
+
+    private void OnEat(InputValue v)
+    {
+        // If the marmot's max speed is the same as the enemy's speed value, stop lowering speed and acceleration
+        if (maxSpeed <= minSpeed)
+        {
+            maxSpeed = minSpeed;
+            return;
+        }
+
+        // Decrement the marmot's max speed, acceleration, air acceleration by 5% if he eats food
+        maxSpeed -= 0.25f;
+        accel -= 3.0f;
+        decel -= 3.0f;
+
+        Debug.Log("Current Max Speed: " + maxSpeed + "Current Acceleration: " + accel);
     }
 
     private void OnPause()
