@@ -140,19 +140,21 @@ public class playerController : MonoBehaviour
 
     private void OnEat(InputValue v)
     {
-        // If the marmot's max speed is the same as the enemy's speed value, stop lowering speed and acceleration
+        // If the marmot's max speed is at or below the minimum speed, set it to the minimum speed and exit
         if (maxSpeed <= minSpeed)
         {
             maxSpeed = minSpeed;
             return;
         }
 
-        // Decrement the marmot's max speed, acceleration, air acceleration by 5% if he eats food
+        // Decrement the marmot's max speed, acceleration, and deceleration by 5% if he eats food
         maxSpeed -= 0.25f;
         accel -= 3.0f;
-        decel -= 3.0f;
+        decel -=3.0f;
 
-        Debug.Log("Current Max Speed: " + maxSpeed + "Current Acceleration: " + accel);
+        // Decrement air acceleration and jump force by 2.5%
+        airAccel -= 0.88f;
+        jumpForce -= 0.35f;
     }
 
     private void OnPause()
