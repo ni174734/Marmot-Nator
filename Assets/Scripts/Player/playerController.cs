@@ -162,8 +162,6 @@ public class playerController : MonoBehaviour
         // Decrement the marmot's air acceleration and jump force by 2.5% if he eats food
         airAccel -= initAirAccel * 0.025f;
         jumpForce -= initJumpForce * 0.025f;
-
-        Debug.Log("MaxSpeed: " + maxSpeed + " Accel: " + accel + " Decel: " + decel + "AirAccel:" + airAccel + " Jumpforce:" + jumpForce);
     }
 
     private void OnPause()
