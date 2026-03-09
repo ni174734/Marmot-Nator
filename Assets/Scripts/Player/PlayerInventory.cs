@@ -98,12 +98,16 @@ public class PlayerInventory : MonoBehaviour
 	
 	private void OnEat(InputValue v)
 	{
-		if(v.Get<float>() <= 0.5f) return; // only on press
-		if(heldItem == null) return;
-		
-		if(ScoreManager.Instance != null)
-			ScoreManager.Instance.AddPoint(100);
-		
+		if (v.Get<float>() <= 0.5f) return;
+		if (heldItem == null) return;
+
+		FoodItem foodItem = heldItem.GetComponent<FoodItem>();
+
+		if (foodItem != null && GameManager.Instance != null)
+		{
+			GameManager.Instance.RegisterFoodEaten(foodItem.foodType);
+		}
+
 		Destroy(heldItem.gameObject);
 		ClearHeld();
 	}

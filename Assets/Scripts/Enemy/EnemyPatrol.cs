@@ -3,47 +3,40 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class EnemyPatrol : MonoBehaviour
 {
-    [Header("Patrol points")]
-    public Transform pointA;
-    public Transform pointB;
-    
-    [Header("Movement")]
-    public float speed = 3f;
-    public float arriveDistance = 0.1f;
+    public float speed = 2.5f;
+    public float patrolRange = 3f;
 
     private Rigidbody2D rb;
-    private Transform target;
 
-    void Awake()
+    private float leftBound;
+    private float rightBound;
+    private int direction = 1;
+
+    void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        target = pointB;
+
+        float spawnX = transform.position.x;
+
+        leftBound = spawnX - patrolRange;
+        rightBound = spawnX + patrolRange;
     }
-    
+
     void FixedUpdate()
     {
-        if(!pointA || !pointB) return;
+        rb.linearVelocity = new Vector2(direction * speed, rb.linearVelocity.y);
 
-        Vector2 pos = rb.position;
-        Vector2 targetPos = target.position;
+        if (transform.position.x >= rightBound)
+            direction = -1;
 
-        float dir = Mathf.Sign(targetPos.x - pos.x);
+        if (transform.position.x <= leftBound)
+            direction = 1;
 
-        // Move horizontally
-        Vector2 vel = rb.linearVelocity;
-        vel.x = dir * speed;
-        rb.linearVelocity = new Vector2(vel.x, rb.linearVelocity.y);
-
-        // Switch targets when close enough
-        if(Mathf.Abs(targetPos.x - pos.x) <= arriveDistance)
-        {
-            target = (target == pointA) ? pointB : pointA;
-        }
-
-        if(dir != 0)
+        // Flip sprite
+        if (direction != 0)
         {
             Vector3 s = transform.localScale;
-            s.x = Mathf.Sign(dir) * Mathf.Abs(s.x);
+            s.x = Mathf.Sign(direction) * Mathf.Abs(s.x);
             transform.localScale = s;
         }
     }

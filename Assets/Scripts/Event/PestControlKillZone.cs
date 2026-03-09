@@ -18,7 +18,7 @@ public class PestControlKillZone : MonoBehaviour
 
         if (Vector2.Distance(transform.position, player.position) <= killRange)
         {
-            GameOverManager.Instance?.GameOver("Pest control got you!");
+            GameOverManager.Instance?.GameOver();
         }
     }
 }

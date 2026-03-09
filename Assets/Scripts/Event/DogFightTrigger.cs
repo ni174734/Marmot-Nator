@@ -51,6 +51,6 @@ public class DogFightTrigger : MonoBehaviour
 
     private void OnPlayerLose()
     {
-        GameOverManager.Instance?.GameOver("Caught by dog!");
+        GameOverManager.Instance?.GameOver();
     }
 }

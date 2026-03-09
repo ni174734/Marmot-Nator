@@ -7,6 +7,7 @@ public class playerController : MonoBehaviour
     public pauseMenu pause;
 
     private Rigidbody2D rb;
+	private Animator anim;
 
     [Header("Move")]
 	[Tooltip("Max player speed.")]
@@ -64,6 +65,7 @@ public class playerController : MonoBehaviour
     {
         playerControls = new PlayerControls();
         rb = GetComponent<Rigidbody2D>();
+		anim = GetComponent<Animator>();
     }
 
     void OnEnable()  => playerControls.MainGame.Enable();
@@ -121,13 +123,10 @@ public class playerController : MonoBehaviour
 
         if (pressed)
         {
-            //jumpHeld = true;
             jumpBufferTimer = jumpBufferTime; // store jump input
         }
         else
         {
-            //jumpHeld = false;
-
             // variable jump: if we're moving up and release jump, cut it
             if (rb.linearVelocity.y > 0f)
             {
@@ -138,13 +137,15 @@ public class playerController : MonoBehaviour
 
     private void OnPause()
     {
-        pause.togglePause();
+        if(pause != null) pause.togglePause();
     }
 
     void Update()
     {
+		bool grounded = IsGrounded();
+		
         // update timers
-        if (IsGrounded())
+        if (grounded)
             coyoteTimer = coyoteTime;
         else
             coyoteTimer -= Time.deltaTime;
@@ -166,6 +167,8 @@ public class playerController : MonoBehaviour
             s.x = Mathf.Sign(moveInput) * Mathf.Abs(s.x);
             transform.localScale = s;
         }
+		
+		UpdateAnimator(grounded);
     }
 
     void FixedUpdate()
@@ -197,6 +200,17 @@ public class playerController : MonoBehaviour
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
+	
+	private void UpdateAnimator(bool grounded)
+	{
+		if(anim == null) return;
+		
+		bool running = grounded && Mathf.Abs(rb.linearVelocity.x) > 0.1f;
+		bool jumping = !grounded;
+		
+		anim.SetBool("isRun", running);
+		anim.SetBool("isJump", jumping);
+	}
 
 #if UNITY_EDITOR
     private void OnDrawGizmosSelected()
