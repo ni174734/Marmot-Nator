@@ -11,24 +11,24 @@ public class playerController : MonoBehaviour
 
     [Header("Move")]
 	[Tooltip("Max player speed.")]
-    [SerializeField] private float maxSpeed = 8f;
-	[Tooltip("How fast you reach max speed.")]
+    [SerializeField] private float maxSpeed = 5f;
+    [Tooltip("How fast you reach max speed.")]
     [SerializeField] private float accel = 60f;         // how fast you reach max speed
 	[Tooltip("How fast you stop.")]
-    [SerializeField] private float decel = 70f;         // how fast you stop
+    [SerializeField] private float decel = 50f;         // how fast you stop
 	[Tooltip("if x -> 0, less control in the air.")]
-    [SerializeField] private float airAccel = 35f;      // less control in air
-    [SerializeField] private float airDecel = 35f;
+    [SerializeField] private float airAccel = 10f;      // less control in air
+    [SerializeField] private float airDecel = 10f;
 
     [Header("Jump")]
 	[Tooltip("How high you jump.")]
-    [SerializeField] private float jumpForce = 14f;
+    [SerializeField] private float jumpForce = 10f;
 	[Tooltip("Seconds after leaving ground you can still jump.")]
     [SerializeField] private float coyoteTime = 0.12f;      // seconds after leaving ground you can still jump
 	[Tooltip("Seconds before landing a jump press is stored.")]
     [SerializeField] private float jumpBufferTime = 0.12f;  // seconds before landing a jump press is stored
 	[Tooltip("Release jump early -> shorter jump.")]
-    [SerializeField] private float jumpCutMultiplier = 0.5f; // release jump early -> shorter jump
+    [SerializeField] private float jumpCutMultiplier = 0f; // release jump early -> shorter jump
 
     [Header("Ground Check")]
     [SerializeField] private Transform groundCheck;
@@ -36,8 +36,8 @@ public class playerController : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
 	
 	[Header("Sprint")]
-	[SerializeField] private float sprintMultiplier = 1.6f;
-	[SerializeField] private float doubleTapTime = 0.25f;
+	[SerializeField] private float sprintMultiplier = 2f;
+	[SerializeField] private float doubleTapTime = 0.5f;
 	[SerializeField] private float tapThreshold = 0.7f;   // how far stick must be pushed to count as a "tap"
 
 	private bool isSprinting;
@@ -54,6 +54,15 @@ public class playerController : MonoBehaviour
     //private bool jumpHeld;
     private float coyoteTimer;
     private float jumpBufferTimer;
+
+    // Cache initial values for these fields
+    private float initMaxSpeed;
+    private float initAccel;         
+    private float initDecel;
+    private float initAirAccel;      
+    private float initJumpForce;
+
+    private float minSpeed;
 
     private bool IsGrounded()
     {
@@ -135,9 +144,38 @@ public class playerController : MonoBehaviour
         }
     }
 
+    private void OnEat(InputValue v)
+    {
+        // If the marmot's max speed is at or below the minimum speed, set it to the minimum speed and exit
+        if (maxSpeed <= minSpeed)
+        {
+            maxSpeed = minSpeed;
+            return;
+        }
+
+        // Decrement the marmot's max speed, acceleration, and deceleration by 5% if he eats food
+        maxSpeed -=  initMaxSpeed * 0.05f;
+        accel -= initAccel * 0.05f;
+        decel -= initDecel * 0.05f;
+
+        // Decrement the marmot's air acceleration and jump force by 2.5% if he eats food
+        airAccel -= initAirAccel * 0.025f;
+        jumpForce -= initJumpForce * 0.025f;
+    }
+
     private void OnPause()
     {
         if(pause != null) pause.togglePause();
+    }
+
+    void Start()
+    {
+        initMaxSpeed = maxSpeed;
+        minSpeed = initMaxSpeed / 2;
+        initAccel = accel;
+        initDecel = decel;
+        initAirAccel = airAccel;
+        initJumpForce = jumpForce;
     }
 
     void Update()
