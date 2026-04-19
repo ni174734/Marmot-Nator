@@ -6,7 +6,9 @@ public class EnemyVisionChase : MonoBehaviour
     public enum State
     {
         Patrol,
-        Chase
+        Chase,
+        Retreat,
+        Stunned
     }
 
     public State state = State.Patrol;
@@ -27,6 +29,11 @@ public class EnemyVisionChase : MonoBehaviour
     public LayerMask playerMask;
     public LayerMask obstacleMask;
 
+    [Header("Retreat / Stun")]
+    public float retreatSpeed = 5.5f;
+    public float retreatDuration = 1.25f;
+    public float stunDuration = 1.25f;
+
     [Header("Tuning")]
     public float stickDeadzone = 0.05f;
 
@@ -37,6 +44,10 @@ public class EnemyVisionChase : MonoBehaviour
     private float leftBound;
     private float rightBound;
     private int patrolDirection = 1;
+
+    private float retreatTimer;
+    private float stunTimer;
+    private Vector2 retreatFromPoint;
 
     void Awake()
     {
@@ -53,6 +64,18 @@ public class EnemyVisionChase : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (state == State.Stunned)
+        {
+            DoStunned();
+            return;
+        }
+
+        if (state == State.Retreat)
+        {
+            DoRetreat();
+            return;
+        }
+
         if (!player)
             player = GameObject.FindGameObjectWithTag("Player")?.transform;
 
@@ -87,7 +110,6 @@ public class EnemyVisionChase : MonoBehaviour
             patrolDirection = 1;
 
         rb.linearVelocity = new Vector2(patrolDirection * patrolSpeed, rb.linearVelocity.y);
-
         Face(patrolDirection);
     }
 
@@ -102,8 +124,33 @@ public class EnemyVisionChase : MonoBehaviour
             dir = Mathf.Sign(dx);
 
         rb.linearVelocity = new Vector2(dir * chaseSpeed, rb.linearVelocity.y);
-
         Face(dir);
+    }
+
+    void DoRetreat()
+    {
+        retreatTimer -= Time.fixedDeltaTime;
+
+        float dx = transform.position.x - retreatFromPoint.x;
+        float dir = 0f;
+
+        if (Mathf.Abs(dx) > stickDeadzone)
+            dir = Mathf.Sign(dx);
+
+        rb.linearVelocity = new Vector2(dir * retreatSpeed, rb.linearVelocity.y);
+        Face(dir);
+
+        if (retreatTimer <= 0f)
+            state = State.Patrol;
+    }
+
+    void DoStunned()
+    {
+        stunTimer -= Time.fixedDeltaTime;
+        rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+
+        if (stunTimer <= 0f)
+            state = State.Patrol;
     }
 
     void Face(float dir)
@@ -137,31 +184,25 @@ public class EnemyVisionChase : MonoBehaviour
         return ((1 << hit.collider.gameObject.layer) & playerMask) != 0;
     }
 
-#if UNITY_EDITOR
-    void OnDrawGizmosSelected()
+    public void StartRetreat(Vector2 screamOrigin)
     {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, viewDistance);
-
-        float facing = 1f;
-        if (Application.isPlaying)
-            facing = patrolDirection != 0 ? patrolDirection : Mathf.Sign(transform.localScale.x);
-        else
-            facing = Mathf.Sign(transform.localScale.x == 0 ? 1 : transform.localScale.x);
-
-        Vector3 origin = transform.position;
-        Vector3 forward = new Vector3(facing, 0f, 0f);
-
-        Quaternion leftRot = Quaternion.Euler(0, 0, viewAngle * 0.5f);
-        Quaternion rightRot = Quaternion.Euler(0, 0, -viewAngle * 0.5f);
-
-        Gizmos.color = Color.cyan;
-        Gizmos.DrawLine(origin, origin + (leftRot * forward) * viewDistance);
-        Gizmos.DrawLine(origin, origin + (rightRot * forward) * viewDistance);
-
-        Gizmos.color = Color.red;
-        Gizmos.DrawLine(new Vector3(leftBound, transform.position.y - 0.3f, 0f), new Vector3(leftBound, transform.position.y + 0.3f, 0f));
-        Gizmos.DrawLine(new Vector3(rightBound, transform.position.y - 0.3f, 0f), new Vector3(rightBound, transform.position.y + 0.3f, 0f));
+		Debug.Log(gameObject.name + " entering retreat state");
+		
+        retreatFromPoint = screamOrigin;
+        retreatTimer = retreatDuration;
+        state = State.Retreat;
+		lastSeenTimer = 999f; // forget the player for now
     }
-#endif
+
+    public void StartStun()
+    {
+        stunTimer = stunDuration;
+        state = State.Stunned;
+        rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
+    }
+	
+	public bool IsDisabledFromAttack()
+	{
+		return state == State.Retreat || state == State.Stunned;
+	}
 }

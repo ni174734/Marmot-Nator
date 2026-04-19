@@ -39,6 +39,13 @@ public class playerController : MonoBehaviour
 	[SerializeField] private float sprintMultiplier = 2f;
 	[SerializeField] private float doubleTapTime = 0.5f;
 	[SerializeField] private float tapThreshold = 0.7f;   // how far stick must be pushed to count as a "tap"
+	
+	[Header("Scream")]
+	[SerializeField] private GameObject screamWavePrefab;
+	[SerializeField] private Transform screamOrigin;
+	[SerializeField] private float screamCooldown = 2f;
+
+	private float screamCooldownTimer = 0f;
 
 	private bool isSprinting;
 	private int sprintDir;            // -1 = left, +1 = right
@@ -168,6 +175,20 @@ public class playerController : MonoBehaviour
         if(pause != null) pause.togglePause();
     }
 
+	private void OnScream(InputValue inputValue)
+	{
+		if (inputValue.Get<float>() <= 0.5f) return;
+		if (screamCooldownTimer > 0f) return;
+		if (screamWavePrefab == null) return;
+
+		Vector3 origin = transform.position;
+		if (screamOrigin != null)
+			origin = screamOrigin.position;
+
+		Instantiate(screamWavePrefab, origin, Quaternion.identity);
+		screamCooldownTimer = screamCooldown;
+	}
+	
     void Start()
     {
         initMaxSpeed = maxSpeed;
@@ -189,6 +210,9 @@ public class playerController : MonoBehaviour
             coyoteTimer -= Time.deltaTime;
 
         jumpBufferTimer -= Time.deltaTime;
+		
+		if (screamCooldownTimer > 0f)
+			screamCooldownTimer -= Time.deltaTime;
 
         // If we have buffered jump + we're allowed to jump (grounded or coyote)
         if (jumpBufferTimer > 0f && coyoteTimer > 0f)

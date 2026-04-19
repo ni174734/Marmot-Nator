@@ -43,6 +43,10 @@ public class MarmotFightTrigger : MonoBehaviour
 
         float dist = Vector2.Distance(transform.position, player.position);
         if (dist > fightRange) return;
+		
+		EnemyPatrol patrol = GetComponent<EnemyPatrol>();
+		if (patrol != null && patrol.IsRetreating())
+			return;
 
         FightManager.Instance.TryStartFight(
             player, playerRB, playerController,
@@ -56,6 +60,8 @@ public class MarmotFightTrigger : MonoBehaviour
     {
         // send marmot back (simple: teleport back toward home)
         transform.position = homePos;
+		if (AudioManager.Instance != null)
+			AudioManager.Instance.PlayPlayerWinFight();
     }
 
     private void OnPlayerLose()
@@ -73,5 +79,8 @@ public class MarmotFightTrigger : MonoBehaviour
 
         // marmot goes back (or keep chasing — your call)
         transform.position = homePos;
+		
+		if (AudioManager.Instance != null)
+			AudioManager.Instance.PlayPlayerLoseFight();
     }
 }

@@ -10,10 +10,12 @@ public class DogFightTrigger : MonoBehaviour
     private Transform player;
     private Rigidbody2D playerRB;
     private MonoBehaviour playerController;
+	private EnemyVisionChase chase;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+		chase = GetComponent<EnemyVisionChase>();
     }
 
     private void Start()
@@ -33,6 +35,10 @@ public class DogFightTrigger : MonoBehaviour
         if (player == null) return;
 
         if (Vector2.Distance(transform.position, player.position) > fightRange) return;
+		
+		EnemyVisionChase chase = GetComponent<EnemyVisionChase>();
+		if (chase != null && chase.IsDisabledFromAttack())
+			return;
 
         FightManager.Instance.TryStartFight(
             player, playerRB, playerController,
@@ -47,10 +53,16 @@ public class DogFightTrigger : MonoBehaviour
         // push dog away from player
         Vector2 dir = ((Vector2)(transform.position - player.position)).normalized;
         rb.AddForce(new Vector2(dir.x, 0.4f).normalized * pushBackForce, ForceMode2D.Impulse);
+		
+		if (AudioManager.Instance != null)
+			AudioManager.Instance.PlayPlayerWinFight();
     }
 
     private void OnPlayerLose()
     {
         GameOverManager.Instance?.GameOver();
+		
+		if (AudioManager.Instance != null)
+			AudioManager.Instance.PlayPlayerLoseFight();
     }
 }

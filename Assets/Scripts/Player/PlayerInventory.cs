@@ -93,6 +93,9 @@ public class PlayerInventory : MonoBehaviour
 			item.transform.SetParent(transform);
 		}
 		
+		if (AudioManager.Instance != null)
+			AudioManager.Instance.PlayPickup();
+		
 		return true;
 	}
 	
@@ -107,6 +110,9 @@ public class PlayerInventory : MonoBehaviour
 		{
 			GameManager.Instance.RegisterFoodEaten(foodItem.foodType);
 		}
+		
+		if (AudioManager.Instance != null)
+			AudioManager.Instance.PlayEat();
 
 		Destroy(heldItem.gameObject);
 		ClearHeld();
@@ -117,10 +123,14 @@ public class PlayerInventory : MonoBehaviour
 		if(v.Get<float>() <= 0.5f) return; // only on press
 		if(heldItem == null) return;
 		
+		if (AudioManager.Instance != null)
+			AudioManager.Instance.PlayDrop();
+		
 		Transform itemT = heldItem.transform;
 		itemT.SetParent(null);
 		
 		if(heldCol != null) heldCol.enabled = true;
+		
 		if(heldCol == null) 
 		{
 			ClearHeld();

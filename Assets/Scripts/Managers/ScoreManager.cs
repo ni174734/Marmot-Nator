@@ -65,8 +65,5 @@ public class ScoreManager : MonoBehaviour
     {
         if (scoreText != null)
             scoreText.text = "Score: " + score;
-
-        if (foodText != null)
-            foodText.text = "Food: " + food;
     }
 }
