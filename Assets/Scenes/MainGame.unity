@@ -845,16 +845,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 714653443}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86968d818328b9e4e8f556afb7bd21bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 78bbce59ed09011459c0a4552cf59791, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScoreManager
   score: 0
   food: 0
-  healthyPoints: 100
-  junkPoints: 50
+  healthyPoints: 150
+  junkPoints: 80
   boostPoints: 200
-  scoreText: {fileID: 1209836156}
-  foodText: {fileID: 2034427821}
+  scoreText: {fileID: 0}
+  foodText: {fileID: 0}
 --- !u!4 &714653445
 Transform:
   m_ObjectHideFlags: 0
@@ -1539,7 +1539,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1352389146}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b06b9ba88713f12489076551275b5d1e, type: 3}
+  m_Script: {fileID: 11500000, guid: 653cc06fde990b04e91d156bbef5deb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameOverManager
   gameOverSceneName: GameOver
@@ -2646,7 +2646,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2145682357}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3aa7efc5942262244973bc359aca18ed, type: 3}
+  m_Script: {fileID: 11500000, guid: abbf8e91de79b6844ae6b453de013b1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FightManager
   fightUI: {fileID: 2104752024}
@@ -2657,7 +2657,7 @@ MonoBehaviour:
   passiveDrain: 0.18
   wiggleThreshold: 0.18
   inputCooldown: 0.05
-  invincibleAfterWin: 3
+  invincibleAfterWin: 1
 --- !u!4 &2145682359
 Transform:
   m_ObjectHideFlags: 0
