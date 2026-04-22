@@ -1,0 +1,1079 @@
+fileFormatVersion: 2
+guid: 153cc8e996a909a42ada8707aaa89df9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3972816525482916591
+    second: layer1_sky_0
+  - first:
+      213: -809468110978890955
+    second: layer1_sky_1
+  - first:
+      213: 6495963954837128587
+    second: layer1_sky_2
+  - first:
+      213: 569808688105655506
+    second: layer1_sky_3
+  - first:
+      213: 4402540264430365712
+    second: layer1_sky_4
+  - first:
+      213: -7575195740014018693
+    second: layer1_sky_5
+  - first:
+      213: -1217481380105992848
+    second: layer1_sky_6
+  - first:
+      213: 8961873230800849823
+    second: layer1_sky_7
+  - first:
+      213: -2352376418891283000
+    second: layer1_sky_8
+  - first:
+      213: -7223640009449964191
+    second: layer1_sky_9
+  - first:
+      213: -2618014763571599916
+    second: layer1_sky_10
+  - first:
+      213: -600633707887867698
+    second: layer1_sky_11
+  - first:
+      213: 1683165869283059410
+    second: layer1_sky_12
+  - first:
+      213: -7074372120500703173
+    second: layer1_sky_13
+  - first:
+      213: 5187142020986131743
+    second: layer1_sky_14
+  - first:
+      213: 2805322135513615338
+    second: layer1_sky_15
+  - first:
+      213: 3854919392214611901
+    second: layer1_sky_16
+  - first:
+      213: -8202807357622216322
+    second: layer1_sky_17
+  - first:
+      213: -3487439677263744452
+    second: layer1_sky_18
+  - first:
+      213: 464556099129988399
+    second: layer1_sky_19
+  - first:
+      213: 697434777504775336
+    second: layer1_sky_20
+  - first:
+      213: -6783497476278917320
+    second: layer1_sky_21
+  - first:
+      213: 2089435742247518503
+    second: layer1_sky_22
+  - first:
+      213: 3160750677742444342
+    second: layer1_sky_23
+  - first:
+      213: -2247562444857344205
+    second: layer1_sky_24
+  - first:
+      213: 8445221622047662603
+    second: layer1_sky_25
+  - first:
+      213: 5426910814761282845
+    second: layer1_sky_26
+  - first:
+      213: -1377935266067797441
+    second: layer1_sky_27
+  - first:
+      213: -4379007061576107808
+    second: layer1_sky_28
+  - first:
+      213: -4961933527945985596
+    second: layer1_sky_29
+  - first:
+      213: -4071009013704547276
+    second: layer1_sky_30
+  - first:
+      213: 4579028178438430580
+    second: layer1_sky_31
+  - first:
+      213: 7695970215747827964
+    second: layer1_sky_32
+  - first:
+      213: 3903514626572546354
+    second: layer1_sky_33
+  - first:
+      213: -4888665188465148491
+    second: layer1_sky_34
+  - first:
+      213: 136010821322971294
+    second: layer1_sky_35
+  - first:
+      213: -1135899035614975375
+    second: layer1_sky_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: layer1_sky_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 214
+        width: 956
+        height: 233
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 123}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1150ac04b68bdd8c0800000000000000
+      internalID: -3972816525482916591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_1
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 500
+        width: 28
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 533c814ba0134c4f0800000000000000
+      internalID: -809468110978890955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_2
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 522
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b850fc1cccc462a50800000000000000
+      internalID: 6495963954837128587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_3
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 514
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dc087c9bfd58e700800000000000000
+      internalID: 569808688105655506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_4
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 524
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ce9ba7b07f81d30800000000000000
+      internalID: 4402540264430365712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_5
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 524
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f796c0c9f7fd690800000000000000
+      internalID: -7575195740014018693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_6
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 512
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0754122a223aa1fe0800000000000000
+      internalID: -1217481380105992848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_7
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 525
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9b87fba838fe5c70800000000000000
+      internalID: 8961873230800849823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_8
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 517
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c5caf54c1eaa5fd0800000000000000
+      internalID: -2352376418891283000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_9
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 511
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16d7f631fa970cb90800000000000000
+      internalID: -7223640009449964191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_10
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 500
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d526908171faabd0800000000000000
+      internalID: -2618014763571599916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_11
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 529
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec8c73133de1aa7f0800000000000000
+      internalID: -600633707887867698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_12
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 500
+        width: 13
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d6ada8b07ecb5710800000000000000
+      internalID: 1683165869283059410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_13
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 523
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b30f0acb908c2dd90800000000000000
+      internalID: -7074372120500703173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_14
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 518
+        width: 14
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1551687f2e6cf740800000000000000
+      internalID: 5187142020986131743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_15
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 528
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeb44d77e918ee620800000000000000
+      internalID: 2805322135513615338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_16
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 528
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db777b253cc6f7530800000000000000
+      internalID: 3854919392214611901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_17
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 520
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7997f72b26c92e80800000000000000
+      internalID: -8202807357622216322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_18
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 517
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c32771d37102a9fc0800000000000000
+      internalID: -3487439677263744452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_19
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 527
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2552e29f4f627600800000000000000
+      internalID: 464556099129988399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_20
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 522
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8acfc272c39cda900800000000000000
+      internalID: 697434777504775336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_21
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 521
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837e2af5cfc2cd1a0800000000000000
+      internalID: -6783497476278917320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_22
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 506
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7210badbcba2ffc10800000000000000
+      internalID: 2089435742247518503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_23
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 500
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63fd96abefd3ddb20800000000000000
+      internalID: 3160750677742444342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_24
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 510
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33ff4cf4ddd0fc0e0800000000000000
+      internalID: -2247562444857344205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_25
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 517
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b02699f0254733570800000000000000
+      internalID: 8445221622047662603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_26
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 500
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1d629d02a2405b40800000000000000
+      internalID: 5426910814761282845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_27
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 512
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3aab861d2790ece0800000000000000
+      internalID: -1377935266067797441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_28
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 500
+        width: 26
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e834d94744aa33c0800000000000000
+      internalID: -4379007061576107808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_29
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 500
+        width: 25
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c1cdabeebba32bb0800000000000000
+      internalID: -4961933527945985596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_30
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 506
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4342ab40fded087c0800000000000000
+      internalID: -4071009013704547276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_31
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 500
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47f93581ed9fb8f30800000000000000
+      internalID: 4579028178438430580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_32
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 506
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf8b2afd2249dca60800000000000000
+      internalID: 7695970215747827964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_33
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 501
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 231f5640fd11c2630800000000000000
+      internalID: 3903514626572546354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_34
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 489
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd77bf89e8f72cb0800000000000000
+      internalID: -4888665188465148491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_35
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 489
+        width: 16
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9890921f1533e100800000000000000
+      internalID: 136010821322971294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer1_sky_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1024
+        height: 447
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17ae57968d97c30f0800000000000000
+      internalID: -1135899035614975375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a98eb212b5cf96e479cd36564202522f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      layer1_sky_0: -3972816525482916591
+      layer1_sky_1: -809468110978890955
+      layer1_sky_10: -2618014763571599916
+      layer1_sky_11: -600633707887867698
+      layer1_sky_12: 1683165869283059410
+      layer1_sky_13: -7074372120500703173
+      layer1_sky_14: 5187142020986131743
+      layer1_sky_15: 2805322135513615338
+      layer1_sky_16: 3854919392214611901
+      layer1_sky_17: -8202807357622216322
+      layer1_sky_18: -3487439677263744452
+      layer1_sky_19: 464556099129988399
+      layer1_sky_2: 6495963954837128587
+      layer1_sky_20: 697434777504775336
+      layer1_sky_21: -6783497476278917320
+      layer1_sky_22: 2089435742247518503
+      layer1_sky_23: 3160750677742444342
+      layer1_sky_24: -2247562444857344205
+      layer1_sky_25: 8445221622047662603
+      layer1_sky_26: 5426910814761282845
+      layer1_sky_27: -1377935266067797441
+      layer1_sky_28: -4379007061576107808
+      layer1_sky_29: -4961933527945985596
+      layer1_sky_3: 569808688105655506
+      layer1_sky_30: -4071009013704547276
+      layer1_sky_31: 4579028178438430580
+      layer1_sky_32: 7695970215747827964
+      layer1_sky_33: 3903514626572546354
+      layer1_sky_34: -4888665188465148491
+      layer1_sky_35: 136010821322971294
+      layer1_sky_36: -1135899035614975375
+      layer1_sky_4: 4402540264430365712
+      layer1_sky_5: -7575195740014018693
+      layer1_sky_6: -1217481380105992848
+      layer1_sky_7: 8961873230800849823
+      layer1_sky_8: -2352376418891283000
+      layer1_sky_9: -7223640009449964191
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

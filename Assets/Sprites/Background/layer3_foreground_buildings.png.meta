@@ -1,0 +1,2171 @@
+fileFormatVersion: 2
+guid: cbacade4a2683a74d9d6015ce77975d0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4647855609966672009
+    second: layer3_foreground_buildings_0
+  - first:
+      213: -1679997620736004806
+    second: layer3_foreground_buildings_1
+  - first:
+      213: 3103555790839257911
+    second: layer3_foreground_buildings_2
+  - first:
+      213: 6263027396171301947
+    second: layer3_foreground_buildings_3
+  - first:
+      213: -3130099096855419688
+    second: layer3_foreground_buildings_4
+  - first:
+      213: -3839449010140346963
+    second: layer3_foreground_buildings_5
+  - first:
+      213: 8363394926483760656
+    second: layer3_foreground_buildings_6
+  - first:
+      213: -5546511037701922212
+    second: layer3_foreground_buildings_7
+  - first:
+      213: -8524207592805250030
+    second: layer3_foreground_buildings_8
+  - first:
+      213: 8118499671675755863
+    second: layer3_foreground_buildings_9
+  - first:
+      213: 8588743119696182386
+    second: layer3_foreground_buildings_10
+  - first:
+      213: -1616625883057688862
+    second: layer3_foreground_buildings_11
+  - first:
+      213: 851894415948784503
+    second: layer3_foreground_buildings_12
+  - first:
+      213: -4228338856424370095
+    second: layer3_foreground_buildings_13
+  - first:
+      213: -4107757176472618295
+    second: layer3_foreground_buildings_14
+  - first:
+      213: 7619001140245689295
+    second: layer3_foreground_buildings_15
+  - first:
+      213: 3852306456370978499
+    second: layer3_foreground_buildings_16
+  - first:
+      213: 6019142618505323262
+    second: layer3_foreground_buildings_17
+  - first:
+      213: -1378653525514050857
+    second: layer3_foreground_buildings_18
+  - first:
+      213: -355407177009256813
+    second: layer3_foreground_buildings_19
+  - first:
+      213: -3094868119275125892
+    second: layer3_foreground_buildings_20
+  - first:
+      213: 8361605904224059496
+    second: layer3_foreground_buildings_21
+  - first:
+      213: -3418954035097511228
+    second: layer3_foreground_buildings_22
+  - first:
+      213: -5542914521625792319
+    second: layer3_foreground_buildings_23
+  - first:
+      213: 5656545607254299133
+    second: layer3_foreground_buildings_24
+  - first:
+      213: 7261230353995891523
+    second: layer3_foreground_buildings_25
+  - first:
+      213: -6653284121985941845
+    second: layer3_foreground_buildings_26
+  - first:
+      213: -5786613427368301256
+    second: layer3_foreground_buildings_27
+  - first:
+      213: -1431450983069237055
+    second: layer3_foreground_buildings_28
+  - first:
+      213: 8698499388703797147
+    second: layer3_foreground_buildings_29
+  - first:
+      213: -4187320194254816088
+    second: layer3_foreground_buildings_30
+  - first:
+      213: 6359257390117949613
+    second: layer3_foreground_buildings_31
+  - first:
+      213: 5875772302994748903
+    second: layer3_foreground_buildings_32
+  - first:
+      213: 6246631774000520478
+    second: layer3_foreground_buildings_33
+  - first:
+      213: -3426226248580123242
+    second: layer3_foreground_buildings_34
+  - first:
+      213: -3993588942045532339
+    second: layer3_foreground_buildings_35
+  - first:
+      213: -7910112852832572680
+    second: layer3_foreground_buildings_36
+  - first:
+      213: -1218272953254408310
+    second: layer3_foreground_buildings_37
+  - first:
+      213: 1449784972228204150
+    second: layer3_foreground_buildings_38
+  - first:
+      213: -2151679374126988027
+    second: layer3_foreground_buildings_39
+  - first:
+      213: -1834506469615032357
+    second: layer3_foreground_buildings_40
+  - first:
+      213: -5626944687171914050
+    second: layer3_foreground_buildings_41
+  - first:
+      213: 2623276130430388721
+    second: layer3_foreground_buildings_42
+  - first:
+      213: 7063482726881839111
+    second: layer3_foreground_buildings_43
+  - first:
+      213: 1726678589679448802
+    second: layer3_foreground_buildings_44
+  - first:
+      213: -6408541348898599879
+    second: layer3_foreground_buildings_45
+  - first:
+      213: -5712984655198367570
+    second: layer3_foreground_buildings_46
+  - first:
+      213: -7047746259531787837
+    second: layer3_foreground_buildings_47
+  - first:
+      213: 1764785170366404408
+    second: layer3_foreground_buildings_48
+  - first:
+      213: 6573041424827508387
+    second: layer3_foreground_buildings_49
+  - first:
+      213: 788610340627010382
+    second: layer3_foreground_buildings_50
+  - first:
+      213: 6398822177017841744
+    second: layer3_foreground_buildings_51
+  - first:
+      213: 3194264393544922816
+    second: layer3_foreground_buildings_52
+  - first:
+      213: -6636582674368636412
+    second: layer3_foreground_buildings_53
+  - first:
+      213: 3568067963330042635
+    second: layer3_foreground_buildings_54
+  - first:
+      213: -8719488501834024290
+    second: layer3_foreground_buildings_55
+  - first:
+      213: 2618340578731959274
+    second: layer3_foreground_buildings_56
+  - first:
+      213: -1210580113966758455
+    second: layer3_foreground_buildings_57
+  - first:
+      213: 8273185239245133163
+    second: layer3_foreground_buildings_58
+  - first:
+      213: -886272946266454587
+    second: layer3_foreground_buildings_59
+  - first:
+      213: -2408120260886100701
+    second: layer3_foreground_buildings_60
+  - first:
+      213: -6733845767139118734
+    second: layer3_foreground_buildings_61
+  - first:
+      213: -1650209573368503770
+    second: layer3_foreground_buildings_62
+  - first:
+      213: -741101389330791601
+    second: layer3_foreground_buildings_63
+  - first:
+      213: -6908034668767542397
+    second: layer3_foreground_buildings_64
+  - first:
+      213: -8115425116836318998
+    second: layer3_foreground_buildings_65
+  - first:
+      213: 5085438241851607469
+    second: layer3_foreground_buildings_66
+  - first:
+      213: 473980647222009330
+    second: layer3_foreground_buildings_67
+  - first:
+      213: -5479963006633592069
+    second: layer3_foreground_buildings_68
+  - first:
+      213: 4586045595831929177
+    second: layer3_foreground_buildings_69
+  - first:
+      213: -3795861782899250219
+    second: layer3_foreground_buildings_70
+  - first:
+      213: 4694020183804998756
+    second: layer3_foreground_buildings_71
+  - first:
+      213: 6390720760474333946
+    second: layer3_foreground_buildings_72
+  - first:
+      213: 4836205791381998404
+    second: layer3_foreground_buildings_73
+  - first:
+      213: 6249991412139368801
+    second: layer3_foreground_buildings_74
+  - first:
+      213: -3072378979701986606
+    second: layer3_foreground_buildings_75
+  - first:
+      213: 8976008225768759067
+    second: layer3_foreground_buildings_76
+  - first:
+      213: -494212650920068620
+    second: layer3_foreground_buildings_77
+  - first:
+      213: -8655400647794315323
+    second: layer3_foreground_buildings_78
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_0
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 103
+        width: 931
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 988be574d00808040800000000000000
+      internalID: 4647855609966672009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_1
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 494
+        width: 29
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3d6780a0137fa8e0800000000000000
+      internalID: -1679997620736004806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_2
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 494
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73b94956c8b021b20800000000000000
+      internalID: 3103555790839257911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_3
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 514
+        width: 26
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b34845fdb3ebae650800000000000000
+      internalID: 6263027396171301947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_4
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 511
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d469249477af84d0800000000000000
+      internalID: -3130099096855419688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_5
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 508
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da50c51b77987bac0800000000000000
+      internalID: -3839449010140346963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_6
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 486
+        width: 12
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0166e5ddf5fb01470800000000000000
+      internalID: 8363394926483760656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_7
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 482
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c526efe0995d603b0800000000000000
+      internalID: -5546511037701922212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_8
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 506
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21cc7278b5ee3b980800000000000000
+      internalID: -8524207592805250030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_9
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 496
+        width: 12
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75ddb5f0074baa070800000000000000
+      internalID: 8118499671675755863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_10
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 506
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27c329cbc58513770800000000000000
+      internalID: 8588743119696182386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_11
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 494
+        width: 23
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eee4a913579099e0800000000000000
+      internalID: -1616625883057688862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_12
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 496
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77324c0357982db00800000000000000
+      internalID: 851894415948784503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_13
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 512
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15018d8763ce155c0800000000000000
+      internalID: -4228338856424370095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_14
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 514
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cab9c0ac905ef6c0800000000000000
+      internalID: -4107757176472618295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_15
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 494
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc3f3ab7b212cb960800000000000000
+      internalID: 7619001140245689295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_16
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 527
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ce9fe9cf44267530800000000000000
+      internalID: 3852306456370978499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_17
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 524
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef2ac6c125a488350800000000000000
+      internalID: 6019142618505323262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_18
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 500
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d225674ce90edce0800000000000000
+      internalID: -1378653525514050857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_19
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 494
+        width: 30
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3962db73e07511bf0800000000000000
+      internalID: -355407177009256813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_20
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 511
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c73cce3c7d1dc05d0800000000000000
+      internalID: -3094868119275125892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_21
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 509
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8608519a4446a0470800000000000000
+      internalID: 8361605904224059496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_22
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 517
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cadf926b6f6d80d0800000000000000
+      internalID: -3418954035097511228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_23
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 494
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c0f3263c9c9313b0800000000000000
+      internalID: -5542914521625792319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_24
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 495
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df150389246108e40800000000000000
+      internalID: 5656545607254299133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_25
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 494
+        width: 31
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 343853a098215c460800000000000000
+      internalID: 7261230353995891523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_26
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 519
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baef7477759caa3a0800000000000000
+      internalID: -6653284121985941845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_27
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 505
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83de4312fb1d1bfa0800000000000000
+      internalID: -5786613427368301256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_28
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 514
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c046c04ae6722ce0800000000000000
+      internalID: -1431450983069237055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_29
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 519
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9f64ae7b1747b870800000000000000
+      internalID: 8698499388703797147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_30
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 495
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac3f9cf776a3e5c0800000000000000
+      internalID: -4187320194254816088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_31
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 494
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da0124d47ee904850800000000000000
+      internalID: 6359257390117949613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_32
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 516
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e5b41547cfea8150800000000000000
+      internalID: 5875772302994748903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_33
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 513
+        width: 15
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d18fb908e70b650800000000000000
+      internalID: 6246631774000520478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_34
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 517
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 695334d31699370d0800000000000000
+      internalID: -3426226248580123242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_35
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 503
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4fa272240ce398c0800000000000000
+      internalID: -3993588942045532339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_36
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 482
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8faa9a91542a93290800000000000000
+      internalID: -7910112852832572680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_37
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 488
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8f0ec52433d71fe0800000000000000
+      internalID: -1218272953254408310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_38
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 500
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6769c5e30cbae1410800000000000000
+      internalID: 1449784972228204150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_39
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 514
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50540a26203b322e0800000000000000
+      internalID: -2151679374126988027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_40
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 492
+        width: 15
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd7a074e5168a86e0800000000000000
+      internalID: -1834506469615032357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_41
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 483
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb6b85eae9319e1b0800000000000000
+      internalID: -5626944687171914050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_42
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 494
+        width: 15
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f9801eedbfb76420800000000000000
+      internalID: 2623276130430388721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_43
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 518
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70846ecbd18860260800000000000000
+      internalID: 7063482726881839111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_44
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 494
+        width: 32
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e2bd1b670566f710800000000000000
+      internalID: 1726678589679448802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_45
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 494
+        width: 20
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93c0f7ad8994017a0800000000000000
+      internalID: -6408541348898599879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_46
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 494
+        width: 10
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea0d4ab89b667b0b0800000000000000
+      internalID: -5712984655198367570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_47
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 494
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c115851e10613e90800000000000000
+      internalID: -7047746259531787837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_48
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 504
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837119023c6cd7810800000000000000
+      internalID: 1764785170366404408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_49
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 496
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a665c4b952283b50800000000000000
+      internalID: 6573041424827508387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_50
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 494
+        width: 23
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e43d5433de4b1fa00800000000000000
+      internalID: 788610340627010382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_51
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 500
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0584a0a1ede2dc850800000000000000
+      internalID: 6398822177017841744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_52
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 514
+        width: 23
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c67cefba8e445c20800000000000000
+      internalID: 3194264393544922816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_53
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 494
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40adeb3483f16e3a0800000000000000
+      internalID: -6636582674368636412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_54
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 500
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b1db088e2548130800000000000000
+      internalID: 3568067963330042635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_55
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 496
+        width: 17
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9a7419c7672ef680800000000000000
+      internalID: -8719488501834024290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_56
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 494
+        width: 29
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae32f4042e6365420800000000000000
+      internalID: 2618340578731959274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_57
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 529
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c50cdedcc7233fe0800000000000000
+      internalID: -1210580113966758455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_58
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 494
+        width: 10
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b651632542240d270800000000000000
+      internalID: 8273185239245133163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_59
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 494
+        width: 11
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c5cfb7737353b3f0800000000000000
+      internalID: -886272946266454587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_60
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 494
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3258679a163a49ed0800000000000000
+      internalID: -2408120260886100701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_61
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 529
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 271b765c3f29c82a0800000000000000
+      internalID: -6733845767139118734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_62
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 494
+        width: 10
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 622eb6ed2274919e0800000000000000
+      internalID: -1650209573368503770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_63
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 494
+        width: 28
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f43c362863417b5f0800000000000000
+      internalID: -741101389330791601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_64
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 493
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3830700b11bb120a0800000000000000
+      internalID: -6908034668767542397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_65
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 514
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae030b58ad7306f80800000000000000
+      internalID: -8115425116836318998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_66
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 482
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da980cc132b139640800000000000000
+      internalID: 5085438241851607469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_67
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 500
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fdd31c23eae39600800000000000000
+      internalID: 473980647222009330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_68
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 488
+        width: 11
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfab257fda243f3b0800000000000000
+      internalID: -5479963006633592069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_69
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 484
+        width: 16
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9598e47eb28e4af30800000000000000
+      internalID: 4586045595831929177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_70
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 500
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5db2fcdd1d3625bc0800000000000000
+      internalID: -3795861782899250219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_71
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 508
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 464f538bc72842140800000000000000
+      internalID: 4694020183804998756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_72
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 494
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af279c21ca660b850800000000000000
+      internalID: 6390720760474333946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_73
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 516
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44bc2004b87ad1340800000000000000
+      internalID: 4836205791381998404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_74
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 103
+        width: 227
+        height: 297
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1612fc1531e6cb650800000000000000
+      internalID: 6249991412139368801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_75
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 103
+        width: 341
+        height: 220
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2da6c7b9897bc55d0800000000000000
+      internalID: -3072378979701986606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_76
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 105
+        width: 70
+        height: 213
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f5ee5acef219c70800000000000000
+      internalID: 8976008225768759067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_77
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 103
+        width: 240
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f9b76266343429f0800000000000000
+      internalID: -494212650920068620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: layer3_foreground_buildings_78
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 0
+        width: 6
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cfa88718f6d1e780800000000000000
+      internalID: -8655400647794315323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 90c8170e0ad980941965bb061c0c8c95
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      layer3_foreground_buildings_0: 4647855609966672009
+      layer3_foreground_buildings_1: -1679997620736004806
+      layer3_foreground_buildings_10: 8588743119696182386
+      layer3_foreground_buildings_11: -1616625883057688862
+      layer3_foreground_buildings_12: 851894415948784503
+      layer3_foreground_buildings_13: -4228338856424370095
+      layer3_foreground_buildings_14: -4107757176472618295
+      layer3_foreground_buildings_15: 7619001140245689295
+      layer3_foreground_buildings_16: 3852306456370978499
+      layer3_foreground_buildings_17: 6019142618505323262
+      layer3_foreground_buildings_18: -1378653525514050857
+      layer3_foreground_buildings_19: -355407177009256813
+      layer3_foreground_buildings_2: 3103555790839257911
+      layer3_foreground_buildings_20: -3094868119275125892
+      layer3_foreground_buildings_21: 8361605904224059496
+      layer3_foreground_buildings_22: -3418954035097511228
+      layer3_foreground_buildings_23: -5542914521625792319
+      layer3_foreground_buildings_24: 5656545607254299133
+      layer3_foreground_buildings_25: 7261230353995891523
+      layer3_foreground_buildings_26: -6653284121985941845
+      layer3_foreground_buildings_27: -5786613427368301256
+      layer3_foreground_buildings_28: -1431450983069237055
+      layer3_foreground_buildings_29: 8698499388703797147
+      layer3_foreground_buildings_3: 6263027396171301947
+      layer3_foreground_buildings_30: -4187320194254816088
+      layer3_foreground_buildings_31: 6359257390117949613
+      layer3_foreground_buildings_32: 5875772302994748903
+      layer3_foreground_buildings_33: 6246631774000520478
+      layer3_foreground_buildings_34: -3426226248580123242
+      layer3_foreground_buildings_35: -3993588942045532339
+      layer3_foreground_buildings_36: -7910112852832572680
+      layer3_foreground_buildings_37: -1218272953254408310
+      layer3_foreground_buildings_38: 1449784972228204150
+      layer3_foreground_buildings_39: -2151679374126988027
+      layer3_foreground_buildings_4: -3130099096855419688
+      layer3_foreground_buildings_40: -1834506469615032357
+      layer3_foreground_buildings_41: -5626944687171914050
+      layer3_foreground_buildings_42: 2623276130430388721
+      layer3_foreground_buildings_43: 7063482726881839111
+      layer3_foreground_buildings_44: 1726678589679448802
+      layer3_foreground_buildings_45: -6408541348898599879
+      layer3_foreground_buildings_46: -5712984655198367570
+      layer3_foreground_buildings_47: -7047746259531787837
+      layer3_foreground_buildings_48: 1764785170366404408
+      layer3_foreground_buildings_49: 6573041424827508387
+      layer3_foreground_buildings_5: -3839449010140346963
+      layer3_foreground_buildings_50: 788610340627010382
+      layer3_foreground_buildings_51: 6398822177017841744
+      layer3_foreground_buildings_52: 3194264393544922816
+      layer3_foreground_buildings_53: -6636582674368636412
+      layer3_foreground_buildings_54: 3568067963330042635
+      layer3_foreground_buildings_55: -8719488501834024290
+      layer3_foreground_buildings_56: 2618340578731959274
+      layer3_foreground_buildings_57: -1210580113966758455
+      layer3_foreground_buildings_58: 8273185239245133163
+      layer3_foreground_buildings_59: -886272946266454587
+      layer3_foreground_buildings_6: 8363394926483760656
+      layer3_foreground_buildings_60: -2408120260886100701
+      layer3_foreground_buildings_61: -6733845767139118734
+      layer3_foreground_buildings_62: -1650209573368503770
+      layer3_foreground_buildings_63: -741101389330791601
+      layer3_foreground_buildings_64: -6908034668767542397
+      layer3_foreground_buildings_65: -8115425116836318998
+      layer3_foreground_buildings_66: 5085438241851607469
+      layer3_foreground_buildings_67: 473980647222009330
+      layer3_foreground_buildings_68: -5479963006633592069
+      layer3_foreground_buildings_69: 4586045595831929177
+      layer3_foreground_buildings_7: -5546511037701922212
+      layer3_foreground_buildings_70: -3795861782899250219
+      layer3_foreground_buildings_71: 4694020183804998756
+      layer3_foreground_buildings_72: 6390720760474333946
+      layer3_foreground_buildings_73: 4836205791381998404
+      layer3_foreground_buildings_74: 6249991412139368801
+      layer3_foreground_buildings_75: -3072378979701986606
+      layer3_foreground_buildings_76: 8976008225768759067
+      layer3_foreground_buildings_77: -494212650920068620
+      layer3_foreground_buildings_78: -8655400647794315323
+      layer3_foreground_buildings_8: -8524207592805250030
+      layer3_foreground_buildings_9: 8118499671675755863
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

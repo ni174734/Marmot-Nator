@@ -136,6 +136,15 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Scream"",
+                    ""type"": ""Button"",
+                    ""id"": ""24cdaf69-a648-4cab-a693-b8023da953ae"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -367,6 +376,28 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Drop"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""281b8306-409f-4495-a513-766af688abd0"",
+                    ""path"": ""<Gamepad>/buttonNorth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Scream"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""d61e9207-c72b-4b47-bace-3836bcaefe48"",
+                    ""path"": ""<Keyboard>/f"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Scream"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -959,6 +990,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_MainGame_Enter = m_MainGame.FindAction("Enter", throwIfNotFound: true);
         m_MainGame_Jump = m_MainGame.FindAction("Jump", throwIfNotFound: true);
         m_MainGame_Drop = m_MainGame.FindAction("Drop", throwIfNotFound: true);
+        m_MainGame_Scream = m_MainGame.FindAction("Scream", throwIfNotFound: true);
         // UI
         m_UI = asset.FindActionMap("UI", throwIfNotFound: true);
         m_UI_Navigate = m_UI.FindAction("Navigate", throwIfNotFound: true);
@@ -1057,6 +1089,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_MainGame_Enter;
     private readonly InputAction m_MainGame_Jump;
     private readonly InputAction m_MainGame_Drop;
+    private readonly InputAction m_MainGame_Scream;
     /// <summary>
     /// Provides access to input actions defined in input action map "MainGame".
     /// </summary>
@@ -1088,6 +1121,10 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "MainGame/Drop".
         /// </summary>
         public InputAction @Drop => m_Wrapper.m_MainGame_Drop;
+        /// <summary>
+        /// Provides access to the underlying input action "MainGame/Scream".
+        /// </summary>
+        public InputAction @Scream => m_Wrapper.m_MainGame_Scream;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -1129,6 +1166,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Drop.started += instance.OnDrop;
             @Drop.performed += instance.OnDrop;
             @Drop.canceled += instance.OnDrop;
+            @Scream.started += instance.OnScream;
+            @Scream.performed += instance.OnScream;
+            @Scream.canceled += instance.OnScream;
         }
 
         /// <summary>
@@ -1155,6 +1195,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Drop.started -= instance.OnDrop;
             @Drop.performed -= instance.OnDrop;
             @Drop.canceled -= instance.OnDrop;
+            @Scream.started -= instance.OnScream;
+            @Scream.performed -= instance.OnScream;
+            @Scream.canceled -= instance.OnScream;
         }
 
         /// <summary>
@@ -1490,6 +1533,13 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnDrop(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Scream" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnScream(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "UI" which allows adding and removing callbacks.

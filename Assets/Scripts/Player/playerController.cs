@@ -1,0 +1,285 @@
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class playerController : MonoBehaviour
+{
+    private PlayerControls playerControls;
+    public pauseMenu pause;
+
+    private Rigidbody2D rb;
+	private Animator anim;
+
+    [Header("Move")]
+	[Tooltip("Max player speed.")]
+    [SerializeField] private float maxSpeed = 5f;
+    [Tooltip("How fast you reach max speed.")]
+    [SerializeField] private float accel = 60f;         // how fast you reach max speed
+	[Tooltip("How fast you stop.")]
+    [SerializeField] private float decel = 50f;         // how fast you stop
+	[Tooltip("if x -> 0, less control in the air.")]
+    [SerializeField] private float airAccel = 10f;      // less control in air
+    [SerializeField] private float airDecel = 10f;
+
+    [Header("Jump")]
+	[Tooltip("How high you jump.")]
+    [SerializeField] private float jumpForce = 10f;
+	[Tooltip("Seconds after leaving ground you can still jump.")]
+    [SerializeField] private float coyoteTime = 0.12f;      // seconds after leaving ground you can still jump
+	[Tooltip("Seconds before landing a jump press is stored.")]
+    [SerializeField] private float jumpBufferTime = 0.12f;  // seconds before landing a jump press is stored
+	[Tooltip("Release jump early -> shorter jump.")]
+    [SerializeField] private float jumpCutMultiplier = 0f; // release jump early -> shorter jump
+
+    [Header("Ground Check")]
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private Vector2 groundCheckSize = new Vector2(0.6f, 0.1f);
+    [SerializeField] private LayerMask groundLayer;
+	
+	[Header("Sprint")]
+	[SerializeField] private float sprintMultiplier = 2f;
+	[SerializeField] private float doubleTapTime = 0.5f;
+	[SerializeField] private float tapThreshold = 0.7f;   // how far stick must be pushed to count as a "tap"
+	
+	[Header("Scream")]
+	[SerializeField] private GameObject screamWavePrefab;
+	[SerializeField] private Transform screamOrigin;
+	[SerializeField] private float screamCooldown = 2f;
+
+	private float screamCooldownTimer = 0f;
+
+	private bool isSprinting;
+	private int sprintDir;            // -1 = left, +1 = right
+	private int prevDir;              // last frame's direction bucket
+	private float lastTapTimeRight;
+	private float lastTapTimeLeft;
+	private int lastTapDirection; // -1 left, 1 right
+
+    [Header("Visual (Optional)")]
+    [SerializeField] private bool flipSprite = true;
+
+    private float moveInput;               // -1..1
+    //private bool jumpHeld;
+    private float coyoteTimer;
+    private float jumpBufferTimer;
+
+    // Cache initial values for these fields
+    private float initMaxSpeed;
+    private float initAccel;         
+    private float initDecel;
+    private float initAirAccel;      
+    private float initJumpForce;
+
+    private float minSpeed;
+
+    private bool IsGrounded()
+    {
+        if (groundCheck == null) return false;
+        return Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0f, groundLayer);
+    }
+
+    void Awake()
+    {
+        playerControls = new PlayerControls();
+        rb = GetComponent<Rigidbody2D>();
+		anim = GetComponent<Animator>();
+    }
+
+    void OnEnable()  => playerControls.MainGame.Enable();
+    void OnDisable() => playerControls.MainGame.Disable();
+
+    // Input System callback (Action: Move [Vector2])
+    private void OnMove(InputValue inputValue)
+    {
+        moveInput = inputValue.Get<Vector2>().x; // horizontal only
+		
+		int direction = 0;
+		if(moveInput > tapThreshold){ direction = 1; }
+		else if(moveInput < -tapThreshold){ direction = -1; }
+		
+		bool isNewTap = (prevDir == 0 && direction != 0);
+		
+		if(isNewTap)
+		{
+			if(direction == 1)
+			{
+				if(Time.time - lastTapTimeRight <= doubleTapTime)
+				{ 
+					isSprinting = true;
+					sprintDir = 1;
+				}
+				lastTapTimeRight = Time.time;
+			}
+			else //if()
+			{
+				if(Time.time - lastTapTimeLeft <= doubleTapTime)
+				{ 
+					isSprinting = true;
+					sprintDir = -1;
+				}
+				lastTapTimeLeft = Time.time;
+			}
+		}
+		
+		// Stop sprint if you let go OR you push the opposite direction
+		if(direction == 0 || (isSprinting && direction != sprintDir)) 
+		{
+			isSprinting = false;
+			sprintDir = 0;
+		}
+		
+		prevDir = direction;
+    }
+
+    // Input System callback (Action: Jump [Button])
+    private void OnJump(InputValue inputValue)
+    {
+        // treat this as "pressed or held"
+        float v = inputValue.Get<float>(); // 1 when pressed/held, 0 when released
+        bool pressed = v > 0.5f;
+
+        if (pressed)
+        {
+            jumpBufferTimer = jumpBufferTime; // store jump input
+        }
+        else
+        {
+            // variable jump: if we're moving up and release jump, cut it
+            if (rb.linearVelocity.y > 0f)
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * jumpCutMultiplier);
+            }
+        }
+    }
+
+    private void OnEat(InputValue v)
+    {
+        // If the marmot's max speed is at or below the minimum speed, set it to the minimum speed and exit
+        if (maxSpeed <= minSpeed)
+        {
+            maxSpeed = minSpeed;
+            return;
+        }
+
+        // Decrement the marmot's max speed, acceleration, and deceleration by 5% if he eats food
+        maxSpeed -=  initMaxSpeed * 0.05f;
+        accel -= initAccel * 0.05f;
+        decel -= initDecel * 0.05f;
+
+        // Decrement the marmot's air acceleration and jump force by 2.5% if he eats food
+        airAccel -= initAirAccel * 0.025f;
+        jumpForce -= initJumpForce * 0.025f;
+    }
+
+    private void OnPause()
+    {
+        if(pause != null) pause.togglePause();
+    }
+
+	private void OnScream(InputValue inputValue)
+	{
+		if (inputValue.Get<float>() <= 0.5f) return;
+		if (screamCooldownTimer > 0f) return;
+		if (screamWavePrefab == null) return;
+
+		Vector3 origin = transform.position;
+		if (screamOrigin != null)
+			origin = screamOrigin.position;
+
+		Instantiate(screamWavePrefab, origin, Quaternion.identity);
+		screamCooldownTimer = screamCooldown;
+	}
+	
+    void Start()
+    {
+        initMaxSpeed = maxSpeed;
+        minSpeed = initMaxSpeed / 2;
+        initAccel = accel;
+        initDecel = decel;
+        initAirAccel = airAccel;
+        initJumpForce = jumpForce;
+    }
+
+    void Update()
+    {
+		bool grounded = IsGrounded();
+		
+        // update timers
+        if (grounded)
+            coyoteTimer = coyoteTime;
+        else
+            coyoteTimer -= Time.deltaTime;
+
+        jumpBufferTimer -= Time.deltaTime;
+		
+		if (screamCooldownTimer > 0f)
+			screamCooldownTimer -= Time.deltaTime;
+
+        // If we have buffered jump + we're allowed to jump (grounded or coyote)
+        if (jumpBufferTimer > 0f && coyoteTimer > 0f)
+        {
+            DoJump();
+            jumpBufferTimer = 0f;
+            coyoteTimer = 0f;
+        }
+
+        // Optional: flip sprite based on movement
+        if (flipSprite && Mathf.Abs(moveInput) > 0.01f)
+        {
+            Vector3 s = transform.localScale;
+            s.x = Mathf.Sign(moveInput) * Mathf.Abs(s.x);
+            transform.localScale = s;
+        }
+		
+		UpdateAnimator(grounded);
+    }
+
+    void FixedUpdate()
+    {
+        // choose accel/decel based on grounded
+        bool grounded = IsGrounded();
+        float a = grounded ? accel : airAccel;
+        float d = grounded ? decel : airDecel;
+
+		float speed = isSprinting ? maxSpeed * sprintMultiplier : maxSpeed;
+        float targetSpeed = moveInput * speed;
+		
+        float speedDiff = targetSpeed - rb.linearVelocity.x;
+
+        // accelerate when input is present, otherwise decelerate to 0
+        float rate = (Mathf.Abs(targetSpeed) > 0.01f) ? a : d;
+
+        float movement = speedDiff * rate;
+        rb.AddForce(new Vector2(movement, 0f), ForceMode2D.Force);
+
+        // clamp max speed
+        float clampedX = Mathf.Clamp(rb.linearVelocity.x, -speed, speed);
+        rb.linearVelocity = new Vector2(clampedX, rb.linearVelocity.y);
+    }
+
+    private void DoJump()
+    {
+        // reset vertical velocity so jump is consistent (no tiny hops if falling)
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
+        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+    }
+	
+	private void UpdateAnimator(bool grounded)
+	{
+		if(anim == null) return;
+		
+		bool running = grounded && Mathf.Abs(rb.linearVelocity.x) > 0.1f;
+		bool jumping = !grounded;
+		
+		anim.SetBool("isRun", running);
+		anim.SetBool("isJump", jumping);
+	}
+
+#if UNITY_EDITOR
+    private void OnDrawGizmosSelected()
+    {
+        if (groundCheck == null) return;
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireCube(groundCheck.position, groundCheckSize);
+    }
+#endif
+}
