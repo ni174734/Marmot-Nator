@@ -20,9 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu/HighScores.unity
     guid: 1a362a103f2d3d540bac893ae0389e69
-  - enabled: 0
-    path: Assets/Scenes/Transfer.unity
+  - enabled: 1
+    path: Assets/Scenes/TransferNew.unity
     guid: 3a01b99364ca162419fb1dab3c47cc74
+  - enabled: 1
+    path: Assets/Scenes/Menu/ControlsBeforePlay.unity
+    guid: 0fb805662d572514893fe9ea6203c5b2
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: c02b2c7555f78604892709f629f10867, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

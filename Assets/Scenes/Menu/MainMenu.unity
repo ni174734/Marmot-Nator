@@ -256,6 +256,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 49028299}
   m_CullTransparentMesh: 1
+--- !u!1 &61908153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61908155}
+  - component: {fileID: 61908154}
+  m_Layer: 0
+  m_Name: UIManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &61908154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61908153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 255d8b86df918844099780c93a5f0b7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIManager
+  gameSceneName: MainGame
+  mainMenuSceneName: MainMenu
+  controlsSceneName: Controls
+  highScoresSceneName: HighScores
+  gameOverSceneName: GameOver
+  ControlsBeforePlaySceneName: ControlsBeforePlay
+--- !u!4 &61908155
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61908153}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 259, y: 264.8664, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &101483606
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,7 +389,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 638905423}
+      - m_Target: {fileID: 61908154}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: OpenControls
         m_Mode: 1
@@ -609,7 +659,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 638905423}
+      - m_Target: {fileID: 61908154}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
@@ -742,9 +792,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 638905423}
+      - m_Target: {fileID: 61908154}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: PlayGame
+        m_MethodName: ControlsBeforePlayGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1013,55 +1063,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 622466922}
   m_CullTransparentMesh: 1
---- !u!1 &638905422
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 638905424}
-  - component: {fileID: 638905423}
-  m_Layer: 0
-  m_Name: UIManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &638905423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 638905422}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 255d8b86df918844099780c93a5f0b7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIManager
-  gameSceneName: MainGame
-  mainMenuSceneName: MainMenu
-  controlsSceneName: Controls
-  highScoresSceneName: HighScores
-  gameOverSceneName: GameOver
---- !u!4 &638905424
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 638905422}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 401.75647, y: 254.59747, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &837078486
 GameObject:
   m_ObjectHideFlags: 0
@@ -1282,7 +1283,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 638905423}
+      - m_Target: {fileID: 61908154}
         m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
         m_MethodName: OpenHighScores
         m_Mode: 1
@@ -2366,4 +2367,4 @@ SceneRoots:
   - {fileID: 1367547495}
   - {fileID: 1097119151}
   - {fileID: 208363660}
-  - {fileID: 638905424}
+  - {fileID: 61908155}
