@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI levelText;
     public TextMeshProUGUI quotaText;
 
+	public HUDController hudController;
+
     private bool quotaMet = false;
 
     private void Awake()
@@ -43,8 +45,12 @@ public class GameManager : MonoBehaviour
     {
         if (scoreManager == null)
             scoreManager = ScoreManager.Instance;
+		
+		if (hudController == null)
+			hudController = FindFirstObjectByType<HUDController>();
 
         UpdateUI();
+		ProceedToNextLevel();
     }
 
     public int GetCurrentQuota()
@@ -76,22 +82,49 @@ public class GameManager : MonoBehaviour
     public void CompleteLevel()
     {
         //Debug.Log("Loading transfer scene: " + transferSceneName);
-        SceneManager.LoadScene(gameplaySceneName);
+		currentLevel++;
+		ProceedToNextLevel();
     }
 
     public void ProceedToNextLevel()
     {
-        currentLevel++;
         foodEatenThisLevel = 0;
         quotaMet = false;
 
-        levelText = null;
-        quotaText = null;
-        levelGenerator = null;
-        player = null;
+        if (scoreManager != null)
+		{
+			scoreManager.score = 0;
+			scoreManager.food = 0;
+		}
 
-        Debug.Log("Loading gameplay scene: " + gameplaySceneName);
-        SceneManager.LoadScene(gameplaySceneName);
+		if (hudController != null)
+		{
+			hudController.ResetTimer();
+			hudController.SetScore(0);
+			hudController.SetFood(0);
+		}
+		
+		if (player == null)
+			player = FindFirstObjectByType<playerController>()?.transform;
+
+		if (player != null)
+		{
+			playerController pc = player.GetComponent<playerController>();
+			if (pc != null)
+				pc.ResetMovementStats();
+		}
+		
+		if (levelGenerator == null)
+			levelGenerator = FindFirstObjectByType<LevelGenerator>();
+
+		if (levelGenerator != null)
+			levelGenerator.GenerateLevel(currentLevel);
+		else
+			Debug.LogError("No LevelGenerator found!");
+
+
+        //Debug.Log("Loading gameplay scene: " + gameplaySceneName);
+        //SceneManager.LoadScene(gameplaySceneName);
     }
 
     public void OnGameplaySceneLoaded(LevelGenerator generatorInScene, TextMeshProUGUI newLevelText, TextMeshProUGUI newQuotaText)

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1906328719397182388}
   - component: {fileID: 5975616726483795055}
   - component: {fileID: 7835281058677237198}
+  - component: {fileID: 7958794973435799692}
   m_Layer: 7
   m_Name: Instakill
   m_TagString: Untagged
@@ -184,7 +185,7 @@ MonoBehaviour:
   patrolSpeed: 2.5
   patrolRange: 3
   arriveDistance: 0.15
-  player: {fileID: 2607742493594708702, guid: d545dca80027b804784e0bd0a07ef262, type: 3}
+  player: {fileID: 0}
   chaseSpeed: 5
   losePlayerTime: 0.5
   viewDistance: 8
@@ -212,3 +213,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PestControlKillZone
   killRange: 0.5
+--- !u!114 &7958794973435799692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198307134259253956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a86840270a769b4f8a0f79b47ca61f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PestControlScreamReact

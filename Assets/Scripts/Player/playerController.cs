@@ -8,6 +8,8 @@ public class playerController : MonoBehaviour
 
     private Rigidbody2D rb;
 	private Animator anim;
+	
+	private IInteractable currentInteractable;
 
     [Header("Move")]
 	[Tooltip("Max player speed.")]
@@ -70,14 +72,8 @@ public class playerController : MonoBehaviour
     private float initJumpForce;
 
     private float minSpeed;
-
-    private bool IsGrounded()
-    {
-        if (groundCheck == null) return false;
-        return Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0f, groundLayer);
-    }
-
-    void Awake()
+	
+	void Awake()
     {
         playerControls = new PlayerControls();
         rb = GetComponent<Rigidbody2D>();
@@ -86,6 +82,60 @@ public class playerController : MonoBehaviour
 
     void OnEnable()  => playerControls.MainGame.Enable();
     void OnDisable() => playerControls.MainGame.Disable();
+
+    private bool IsGrounded()
+    {
+        if (groundCheck == null) return false;
+        return Physics2D.OverlapBox(groundCheck.position, groundCheckSize, 0f, groundLayer);
+    }
+
+    public void SetInteractable(IInteractable interactable)
+	{
+		currentInteractable = interactable;
+		Debug.Log("Interactable SET → " + interactable.GetType().Name);
+	}
+
+	public void ClearInteractable(IInteractable interactable)
+	{
+		if (currentInteractable == interactable)
+			currentInteractable = null;
+	}
+	
+	public void ForceClearInteractable()
+	{
+		currentInteractable = null;
+	}
+
+	private void OnEnter(InputValue inputValue)
+	{
+		//Debug.Log("ENTER INPUT RECEIVED");
+		
+		if (inputValue.Get<float>() <= 0.5f) return;
+
+		if (currentInteractable != null)
+		{
+			//Debug.Log("Interacting with: " + currentInteractable.GetType().Name);
+			currentInteractable.Interact(transform);
+		}
+	}
+	
+	private void OnExit(InputValue inputValue)
+	{
+		Debug.Log("EXIT INPUT RECEIVED");
+
+		if (inputValue.Get<float>() <= 0.5f) return;
+
+		if (currentInteractable == null)
+		{
+			Debug.Log("No interactable set for Exit!");
+			return;
+		}
+
+		if (currentInteractable is BuildingDoor door)
+		{
+			door.Interact(transform);
+		}
+	}
 
     // Input System callback (Action: Move [Vector2])
     private void OnMove(InputValue inputValue)
@@ -198,6 +248,17 @@ public class playerController : MonoBehaviour
         initAirAccel = airAccel;
         initJumpForce = jumpForce;
     }
+	
+	public void ResetMovementStats()
+	{
+		maxSpeed = initMaxSpeed;
+		accel = initAccel;
+		decel = initDecel;
+		airAccel = initAirAccel;
+		jumpForce = initJumpForce;
+
+		Debug.Log("Player movement RESET");
+	}
 
     void Update()
     {

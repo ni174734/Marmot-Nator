@@ -120,6 +120,15 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": false
                 },
                 {
+                    ""name"": ""Exit"",
+                    ""type"": ""Button"",
+                    ""id"": ""b292569d-16fb-469f-976c-babc04a8ccf5"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
                     ""name"": ""Jump"",
                     ""type"": ""Button"",
                     ""id"": ""1f7f0b86-b546-4fee-95e9-d80a6c3c3ec2"",
@@ -398,6 +407,28 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Scream"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7bbf8a7c-eaf6-41c2-8a82-9f1bbf1d847e"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Exit"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ff97fb73-61dd-4d61-9051-58c0a995c5fd"",
+                    ""path"": ""<Gamepad>/leftStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Exit"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -988,6 +1019,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_MainGame_Move = m_MainGame.FindAction("Move", throwIfNotFound: true);
         m_MainGame_Eat = m_MainGame.FindAction("Eat", throwIfNotFound: true);
         m_MainGame_Enter = m_MainGame.FindAction("Enter", throwIfNotFound: true);
+        m_MainGame_Exit = m_MainGame.FindAction("Exit", throwIfNotFound: true);
         m_MainGame_Jump = m_MainGame.FindAction("Jump", throwIfNotFound: true);
         m_MainGame_Drop = m_MainGame.FindAction("Drop", throwIfNotFound: true);
         m_MainGame_Scream = m_MainGame.FindAction("Scream", throwIfNotFound: true);
@@ -1087,6 +1119,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputAction m_MainGame_Move;
     private readonly InputAction m_MainGame_Eat;
     private readonly InputAction m_MainGame_Enter;
+    private readonly InputAction m_MainGame_Exit;
     private readonly InputAction m_MainGame_Jump;
     private readonly InputAction m_MainGame_Drop;
     private readonly InputAction m_MainGame_Scream;
@@ -1113,6 +1146,10 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "MainGame/Enter".
         /// </summary>
         public InputAction @Enter => m_Wrapper.m_MainGame_Enter;
+        /// <summary>
+        /// Provides access to the underlying input action "MainGame/Exit".
+        /// </summary>
+        public InputAction @Exit => m_Wrapper.m_MainGame_Exit;
         /// <summary>
         /// Provides access to the underlying input action "MainGame/Jump".
         /// </summary>
@@ -1160,6 +1197,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Enter.started += instance.OnEnter;
             @Enter.performed += instance.OnEnter;
             @Enter.canceled += instance.OnEnter;
+            @Exit.started += instance.OnExit;
+            @Exit.performed += instance.OnExit;
+            @Exit.canceled += instance.OnExit;
             @Jump.started += instance.OnJump;
             @Jump.performed += instance.OnJump;
             @Jump.canceled += instance.OnJump;
@@ -1189,6 +1229,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Enter.started -= instance.OnEnter;
             @Enter.performed -= instance.OnEnter;
             @Enter.canceled -= instance.OnEnter;
+            @Exit.started -= instance.OnExit;
+            @Exit.performed -= instance.OnExit;
+            @Exit.canceled -= instance.OnExit;
             @Jump.started -= instance.OnJump;
             @Jump.performed -= instance.OnJump;
             @Jump.canceled -= instance.OnJump;
@@ -1519,6 +1562,13 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnEnter(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Exit" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnExit(InputAction.CallbackContext context);
         /// <summary>
         /// Method invoked when associated input action "Jump" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
         /// </summary>

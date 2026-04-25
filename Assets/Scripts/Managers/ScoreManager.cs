@@ -6,6 +6,7 @@ public class ScoreManager : MonoBehaviour
     public static ScoreManager Instance;
 
     public int score = 0;
+	public int totalScore = 0;
     public int food = 0;
 
     [Header("Point Values")]
@@ -59,6 +60,11 @@ public class ScoreManager : MonoBehaviour
         food += 1;
 
         UpdateUI();
+    }
+
+	private void UpdateScore()
+    {
+        totalScore += score;
     }
 
     private void UpdateUI()
