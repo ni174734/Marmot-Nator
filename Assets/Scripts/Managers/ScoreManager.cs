@@ -8,6 +8,7 @@ public class ScoreManager : MonoBehaviour
     public int score = 0;
 	public int totalScore = 0;
     public int food = 0;
+	public int totalFood = 0;
 
     [Header("Point Values")]
     public int healthyPoints = 150;
@@ -58,6 +59,7 @@ public class ScoreManager : MonoBehaviour
 
         score += points;
         food += 1;
+		totalFood += 1;
 
         UpdateUI();
     }
@@ -65,6 +67,11 @@ public class ScoreManager : MonoBehaviour
 	private void UpdateScore()
     {
         totalScore += score;
+    }
+	
+	private void UpdateFood()
+    {
+        totalFood += food;
     }
 
     private void UpdateUI()

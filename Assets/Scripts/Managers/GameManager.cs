@@ -27,6 +27,8 @@ public class GameManager : MonoBehaviour
 	public HUDController hudController;
 
     private bool quotaMet = false;
+	
+	private float runStartTime;
 
     private void Awake()
     {
@@ -43,7 +45,9 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        if (scoreManager == null)
+        runStartTime = Time.time;
+		
+		if (scoreManager == null)
             scoreManager = ScoreManager.Instance;
 		
 		if (hudController == null)
@@ -52,6 +56,11 @@ public class GameManager : MonoBehaviour
         UpdateUI();
 		ProceedToNextLevel();
     }
+	
+	public float GetTotalTimePlayed()
+	{
+		return Time.time - runStartTime;
+	}
 
     public int GetCurrentQuota()
     {
@@ -84,6 +93,7 @@ public class GameManager : MonoBehaviour
         //Debug.Log("Loading transfer scene: " + transferSceneName);
 		currentLevel++;
 		ProceedToNextLevel();
+		UpdateUI();
     }
 
     public void ProceedToNextLevel()
@@ -93,14 +103,13 @@ public class GameManager : MonoBehaviour
 
         if (scoreManager != null)
 		{
-			scoreManager.score = 0;
 			scoreManager.food = 0;
 		}
 
 		if (hudController != null)
 		{
 			hudController.ResetTimer();
-			hudController.SetScore(0);
+			//hudController.SetScore(0);
 			hudController.SetFood(0);
 		}
 		

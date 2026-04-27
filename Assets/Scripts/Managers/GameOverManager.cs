@@ -20,6 +20,18 @@ public class GameOverManager : MonoBehaviour
 
         // simplest: reload scene after a delay
         // Invoke(nameof(Reload), 1.5f);
+		
+		if (ScoreManager.Instance != null)
+        {
+            RunStats.finalScore = ScoreManager.Instance.score;
+            RunStats.finalFood = ScoreManager.Instance.totalFood;
+        }
+
+        if (GameManager.Instance != null)
+        {
+            RunStats.finalTimePlayed = GameManager.Instance.GetTotalTimePlayed();
+        }
+		
         Time.timeScale = 1f;
 		
 		SceneManager.LoadScene(gameOverSceneName);

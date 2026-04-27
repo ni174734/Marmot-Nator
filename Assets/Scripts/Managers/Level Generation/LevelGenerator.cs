@@ -34,6 +34,9 @@ public class LevelGenerator : MonoBehaviour
 	[Range(0f, 1f)] public float foodZoneChance = 0.7f;
 	public int maxEnemiesPerLevel = 5;
 	public int maxFoodPerLevel = 12;
+	
+	[Header("End Block")]
+	public GameObject endBlockPrefab;
 
 	private int spawnedFoodCount;
 	private int spawnedEnemyCount;
@@ -125,6 +128,32 @@ public class LevelGenerator : MonoBehaviour
 			
 			previousType = placedChunk.chunkType;
 		}
+		
+		PlaceEndBlock(currentConnector);
+	}
+	
+	private void PlaceEndBlock(Transform currentConnector)
+	{
+		if (endBlockPrefab == null)
+		{
+			Debug.LogWarning("No endBlockPrefab assigned.");
+			return;
+		}
+
+		GameObject endBlock = Instantiate(endBlockPrefab);
+		LevelChunk endChunk = endBlock.GetComponent<LevelChunk>();
+
+		if (endChunk == null || endChunk.startConnector == null)
+		{
+			Debug.LogError("End block prefab needs LevelChunk and startConnector.");
+			Destroy(endBlock);
+			return;
+		}
+
+		Vector3 offset = endChunk.startConnector.position - endBlock.transform.position;
+		endBlock.transform.position = currentConnector.position - offset;
+
+		spawnedChunks.Add(endBlock);
 	}
 	
 	GameObject GetValidChunk(LevelChunk.ChunkType previousType)

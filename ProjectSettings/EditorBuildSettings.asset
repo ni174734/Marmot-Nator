@@ -15,11 +15,11 @@ EditorBuildSettings:
     path: Assets/Scenes/GameOver/GameOver.unity
     guid: d7de25be411efde4b96ce01cc152de87
   - enabled: 1
-    path: Assets/Scenes/Menu/Controls.unity
-    guid: aeb61922213229e449c7c8a9350ee548
-  - enabled: 1
     path: Assets/Scenes/Menu/HighScores.unity
     guid: 1a362a103f2d3d540bac893ae0389e69
+  - enabled: 1
+    path: Assets/Scenes/Menu/Controls.unity
+    guid: aeb61922213229e449c7c8a9350ee548
   - enabled: 0
     path: Assets/Scenes/Transfer.unity
     guid: 3a01b99364ca162419fb1dab3c47cc74
