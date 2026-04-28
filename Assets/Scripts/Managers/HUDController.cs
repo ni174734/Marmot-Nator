@@ -14,6 +14,8 @@ public class HUDController : MonoBehaviour
     private float timeLeft;
     private int score;
     private int food;
+	
+	private bool timerRunning = true;
 
     void Start()
     {
@@ -25,17 +27,21 @@ public class HUDController : MonoBehaviour
     {
         // Countdown
         timeLeft -= Time.deltaTime;
-        if (timeLeft < 0) timeLeft = 0;
+        if (timeLeft < 0) 
+		{
+			timeLeft = 0;
+			timerRunning = false;
+			
+			onTimerExpired();
+		}
 
         RefreshTimer();
-
-		/*
-        // (Optional) test controls in your UI-only project:
-        // Press T to add score, Y to add food
-        if (Input.GetKeyDown(KeyCode.T)) AddScore(10);
-        if (Input.GetKeyDown(KeyCode.Y)) AddFood(1);
-		*/
     }
+	
+	private void onTimerExpired()
+	{
+		GameOverManager.Instance.GameOver();
+	}
 
     public void SetScore(int newScore)
     {
@@ -64,6 +70,7 @@ public class HUDController : MonoBehaviour
     public void ResetTimer()
     {
         timeLeft = startTimeSeconds;
+		timerRunning = true;
         RefreshTimer();
     }
 

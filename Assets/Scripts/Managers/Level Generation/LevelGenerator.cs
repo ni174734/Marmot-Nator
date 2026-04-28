@@ -37,6 +37,8 @@ public class LevelGenerator : MonoBehaviour
 	
 	[Header("End Block")]
 	public GameObject endBlockPrefab;
+	
+	public float speedMultiplier = 1f;
 
 	private int spawnedFoodCount;
 	private int spawnedEnemyCount;
@@ -56,6 +58,25 @@ public class LevelGenerator : MonoBehaviour
         CollectZones();
         PopulateSpawnZones(level);
     }
+
+	private void ApplyEnemySpeedMultiplier(GameObject enemy, float speedMultiplier)
+	{
+		if (enemy == null) return;
+
+		EnemyVisionChase chase = enemy.GetComponent<EnemyVisionChase>();
+		if (chase != null)
+		{
+			chase.patrolSpeed *= speedMultiplier;
+			chase.chaseSpeed *= speedMultiplier;
+			return;
+		}
+
+		EnemyPatrol patrol = enemy.GetComponent<EnemyPatrol>();
+		if (patrol != null)
+		{
+			patrol.speed *= speedMultiplier;
+		}
+	}
 
     private void EnsurePlayerExistsAtSpawn()
     {
@@ -217,6 +238,9 @@ public class LevelGenerator : MonoBehaviour
 	{
 		spawnedFoodCount = 0;
 		spawnedEnemyCount = 0;
+		
+		if (GameManager.Instance != null)
+			speedMultiplier = GameManager.Instance.GetEnemySpeedMultiplier();
 
 		int requiredFood = GameManager.Instance.GetCurrentQuota();
 		int foodTarget = requiredFood + 8;
@@ -255,8 +279,11 @@ public class LevelGenerator : MonoBehaviour
 				{
 					GameObject prefab = GetRandomEnemyPrefab(level);
 					if (prefab == null) continue;
+					
+					
 
 					GameObject enemy = Instantiate(prefab, zone.GetRandomPoint(), Quaternion.identity);
+					ApplyEnemySpeedMultiplier(enemy, speedMultiplier);
 					spawnedActors.Add(enemy);
 					spawnedEnemyCount++;
 				}
@@ -265,8 +292,8 @@ public class LevelGenerator : MonoBehaviour
 	}
 	
     private void SpawnEnemy(GameObject prefab, SpawnZone zone)
-    {
-        if (prefab == null || zone == null) return;
+    {	
+		if (prefab == null || zone == null) return;
 
         Vector3 pos = zone.GetRandomPoint();
         GameObject enemy = Instantiate(prefab, pos, Quaternion.identity);

@@ -23,8 +23,16 @@ public class GameManager : MonoBehaviour
     [Header("UI")]
     public TextMeshProUGUI levelText;
     public TextMeshProUGUI quotaText;
+	
+	[Header("Director Difficulty")]
+	public int extraFoodEatenLastLevel = 0;
+	public int extraEnemyPerExtraFood = 1;
+	public float enemySpeedIncreasePerExtraFood = 0.15f;
+	public float maxEnemySpeedMultiplier = 2.5f;
 
 	public HUDController hudController;
+	
+	private float enemySpeedMultiplier = 1f;
 
     private bool quotaMet = false;
 	
@@ -56,6 +64,16 @@ public class GameManager : MonoBehaviour
         UpdateUI();
 		ProceedToNextLevel();
     }
+	
+	public float GetEnemySpeedMultiplier()
+	{
+		return enemySpeedMultiplier;
+	}
+	
+	public int GetExtraEnemyCount()
+	{
+		return extraFoodEatenLastLevel * extraEnemyPerExtraFood;
+	}
 	
 	public float GetTotalTimePlayed()
 	{
@@ -91,6 +109,17 @@ public class GameManager : MonoBehaviour
     public void CompleteLevel()
     {
         //Debug.Log("Loading transfer scene: " + transferSceneName);
+		int quota = GetCurrentQuota();
+		
+		int extraFood = foodEatenThisLevel - quota;
+		
+		if (extraFood < 0) extraFood = 0;
+		
+		extraFoodEatenLastLevel = extraFood;
+		enemySpeedMultiplier = 1f + (extraFoodEatenLastLevel * enemySpeedIncreasePerExtraFood);
+		
+		if (enemySpeedMultiplier > maxEnemySpeedMultiplier) enemySpeedMultiplier = maxEnemySpeedMultiplier;
+		
 		currentLevel++;
 		ProceedToNextLevel();
 		UpdateUI();

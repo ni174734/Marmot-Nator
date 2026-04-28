@@ -947,10 +947,10 @@ MonoBehaviour:
   cam: {fileID: 519420032}
   layers:
   - layer: {fileID: 2016324420}
-    parallaxAmount: 0.003
+    parallaxAmount: 1
     followCameraY: 1
   - layer: {fileID: 2069300259}
-    parallaxAmount: 0.324
+    parallaxAmount: 0.5
     followCameraY: 1
 --- !u!4 &1028798889
 Transform:
@@ -1415,6 +1415,10 @@ MonoBehaviour:
   gameplaySceneName: MainGame
   levelText: {fileID: 2034427822}
   quotaText: {fileID: 2034427821}
+  extraFoodEatenLastLevel: 0
+  extraEnemyPerExtraFood: 3
+  enemySpeedIncreasePerExtraFood: 0.15
+  maxEnemySpeedMultiplier: 2.5
   hudController: {fileID: 1702770965}
 --- !u!4 &1377465724
 Transform:
@@ -1592,6 +1596,7 @@ MonoBehaviour:
   maxEnemiesPerLevel: 10
   maxFoodPerLevel: 12
   endBlockPrefab: {fileID: 8879861052702349261, guid: 4ce4046ce94713744852fdc8c8c457d6, type: 3}
+  speedMultiplier: 1
 --- !u!4 &1593794324
 Transform:
   m_ObjectHideFlags: 0
@@ -2367,7 +2372,7 @@ PrefabInstance:
       objectReference: {fileID: 1602523348824941089}
     - target: {fileID: 4699673947180968398, guid: d545dca80027b804784e0bd0a07ef262, type: 3}
       propertyPath: screamCooldown
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4699673947180968398, guid: d545dca80027b804784e0bd0a07ef262, type: 3}
       propertyPath: screamWavePrefab

@@ -92,7 +92,7 @@ public class playerController : MonoBehaviour
     public void SetInteractable(IInteractable interactable)
 	{
 		currentInteractable = interactable;
-		Debug.Log("Interactable SET → " + interactable.GetType().Name);
+		// Debug.Log("Interactable SET → " + interactable.GetType().Name);
 	}
 
 	public void ClearInteractable(IInteractable interactable)
