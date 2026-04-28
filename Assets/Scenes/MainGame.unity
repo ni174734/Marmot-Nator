@@ -2294,6 +2294,10 @@ PrefabInstance:
       propertyPath: screamWavePrefab
       value: 
       objectReference: {fileID: 2195568244641224829, guid: 0c7c280e8dac6e741b4315f5c6b5edb2, type: 3}
+    - target: {fileID: 5715936262865933858, guid: d545dca80027b804784e0bd0a07ef262, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 49be90c303263474d9be881e5b6a4bad, type: 2}
     - target: {fileID: 8035015420886948757, guid: d545dca80027b804784e0bd0a07ef262, type: 3}
       propertyPath: m_Name
       value: Player
