@@ -29,8 +29,15 @@ public class GameManager : MonoBehaviour
 	public int extraEnemyPerExtraFood = 1;
 	public float enemySpeedIncreasePerExtraFood = 0.15f;
 	public float maxEnemySpeedMultiplier = 2.5f;
+	
+	[Header("Transfer UI")]
+	public GameObject transferCanvas;
+	public TextMeshProUGUI transferMessageText;
 
 	public HUDController hudController;
+
+	private float totalPlayTime = 0f;
+	private bool playTimerPaused = false;
 	
 	private float enemySpeedMultiplier = 1f;
 
@@ -53,17 +60,30 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        runStartTime = Time.time;
-		
 		if (scoreManager == null)
             scoreManager = ScoreManager.Instance;
 		
 		if (hudController == null)
 			hudController = FindFirstObjectByType<HUDController>();
 
-        UpdateUI();
-		ProceedToNextLevel();
+        if (transferCanvas != null)
+			transferCanvas.SetActive(false);
+		
+		UpdateUI();
+		StartLevel();
+		//ProceedToNextLevel();
     }
+	
+	private void Update()
+	{
+		if (!playTimerPaused)
+			totalPlayTime += Time.deltaTime;
+	}
+
+	public float GetTotalTimePlayed()
+	{
+		return totalPlayTime;
+	}
 	
 	public float GetEnemySpeedMultiplier()
 	{
@@ -73,11 +93,6 @@ public class GameManager : MonoBehaviour
 	public int GetExtraEnemyCount()
 	{
 		return extraFoodEatenLastLevel * extraEnemyPerExtraFood;
-	}
-	
-	public float GetTotalTimePlayed()
-	{
-		return Time.time - runStartTime;
 	}
 
     public int GetCurrentQuota()
@@ -120,14 +135,31 @@ public class GameManager : MonoBehaviour
 		
 		if (enemySpeedMultiplier > maxEnemySpeedMultiplier) enemySpeedMultiplier = maxEnemySpeedMultiplier;
 		
-		currentLevel++;
-		ProceedToNextLevel();
+		playTimerPaused = true;
+		
+		if (levelGenerator != null) levelGenerator.ClearGeneratedLevel();
+		if (transferMessageText != null) transferMessageText.text = "You passed level " + currentLevel;
+		
+		transferCanvas.SetActive(true);
+
 		UpdateUI();
     }
 
     public void ProceedToNextLevel()
     {
-        foodEatenThisLevel = 0;
+        if (transferCanvas != null) transferCanvas.SetActive(false);
+		
+		currentLevel++;
+		
+		playTimerPaused = false;
+		
+		UpdateUI();
+		StartLevel();
+    }
+	
+	private void StartLevel()
+	{
+		foodEatenThisLevel = 0;
         quotaMet = false;
 
         if (scoreManager != null)
@@ -138,7 +170,6 @@ public class GameManager : MonoBehaviour
 		if (hudController != null)
 		{
 			hudController.ResetTimer();
-			//hudController.SetScore(0);
 			hudController.SetFood(0);
 		}
 		
@@ -160,10 +191,7 @@ public class GameManager : MonoBehaviour
 		else
 			Debug.LogError("No LevelGenerator found!");
 
-
-        //Debug.Log("Loading gameplay scene: " + gameplaySceneName);
-        //SceneManager.LoadScene(gameplaySceneName);
-    }
+	}
 
     public void OnGameplaySceneLoaded(LevelGenerator generatorInScene, TextMeshProUGUI newLevelText, TextMeshProUGUI newQuotaText)
     {

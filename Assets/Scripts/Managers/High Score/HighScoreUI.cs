@@ -18,6 +18,7 @@ public class HighScoreUI : MonoBehaviour
     private void Start()
     {
         RefreshLeaderboard();
+		if (InputModeManager.Instance != null) InputModeManager.Instance.SwitchToUI();
     }
 
     public void RefreshLeaderboard()

@@ -17,7 +17,6 @@ public class LevelExitTrigger : MonoBehaviour
         if (GameManager.Instance.HasMetQuota())
         {
             GameManager.Instance.CompleteLevel();
-			GameManager.Instance.ProceedToNextLevel();
         }
     }
 }

@@ -10,6 +10,13 @@ public class UIManager : MonoBehaviour
     public string controlsSceneName = "Controls";
     public string highScoresSceneName = "HighScores";
     public string gameOverSceneName = "GameOver";
+	public string ControlsBeforePlaySceneName = "ControlsBeforePlay";
+
+
+    public void ControlsBeforePlayGame()
+    {
+        SceneManager.LoadScene(ControlsBeforePlaySceneName);
+    }
 
     public void PlayGame()
     {

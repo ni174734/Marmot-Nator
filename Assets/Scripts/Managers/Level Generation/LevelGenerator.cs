@@ -369,6 +369,11 @@ public class LevelGenerator : MonoBehaviour
         //enemyZones.Clear();
     }
 
+	public void ClearGeneratedLevel()
+	{
+		ClearLevel();
+	}
+
     private void ShuffleList<T>(List<T> list)
     {
         for (int i = 0; i < list.Count; i++)
